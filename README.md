@@ -3,7 +3,6 @@ First attempt at working with Java. Trying to learn the basic syntax of Java wit
 
 Attempting to create a basic ATM program. Allows you to make deposits into either a checkings or savings. Also allows you to make an account and set up a checkings or savings account with an initial deposit. Checkings and savings are subclasses of an account. Pointers for the classes are saved in an ArrayList. Basic methods allow for basic manipulations of the accounts.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
 
 [Software Demo Video](http://youtube.link.goes.here)
 
@@ -15,8 +14,6 @@ JDK 15
 Until Package
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 * [W3 Schools](https://www.w3schools.com/java/default.asp)
 * [TutorialsPoint](https://www.tutorialspoint.com/java/java_basic_syntax.htm)
 
