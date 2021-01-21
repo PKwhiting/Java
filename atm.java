@@ -6,7 +6,6 @@ class atm {
     public static void main(String[] args) {
         boolean cont = true;
         Scanner in = new Scanner(System.in);
-        int i = 0;
         ArrayList<account> accounts = new ArrayList<>();
         accounts.add(new checkings("admin", "admin", "admin@admin.com", 1234, 10000));
         System.out.println("Welcome to General ATM!\n Do you hold an account with us?(y/n)");
@@ -139,5 +138,6 @@ class atm {
             }
         }
     System.out.print("Thank you for your business.\n");
+    in.close();
     }
 }
