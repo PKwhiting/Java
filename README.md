@@ -20,3 +20,5 @@ Attempting to create a basic ATM program. Allows you to make deposits into eithe
 * Allow for a continuous while loop that allows users to take multiple actions.
 * Allow for a checking and savings account to be created simultaneously under the same pin.
 * GUI
+* Allow for the transfer of funds between accounts
+* "Print Receipt" by writing account information and account amount to a file

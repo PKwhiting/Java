@@ -1,5 +1,5 @@
 import java.util.Random;
-public class account{
+abstract class account{
     String fname;
     String lname;
     String email;

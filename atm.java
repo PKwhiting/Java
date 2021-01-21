@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 class atm { 
-    //write methods here
-    public static void main(String[] args) {
+public static void main(String[] args) {
+        //setting up scanner and boolean for main while loop
         boolean cont = true;
         Scanner in = new Scanner(System.in);
         ArrayList<account> accounts = new ArrayList<>();
@@ -21,11 +21,12 @@ class atm {
                 for (int j = 0; j < accounts.size(); j++){
                     int temp = accounts.get(j).getPin();
                     if (temp == userPin) {
-                        //maked deposits and withdrawals from existing accounts
+                        //makes deposits and withdrawals from existing accounts
+                        //checks object for instance of class
                         if (accounts.get(j) instanceof checkings){
                             System.out.println("Would you like to withdraw or make a deposit from your checkings(w/d)?");
                             input = in.nextLine();
-                            if (input.equals("w")){
+                            if (input.equals("w")){//makes withdrawal from checkings
                                 var object = accounts.get(j);
                                 System.out.print("Your accounts balance is " + ((checkings)object).getAmount() + "\n");
                                 System.out.print("How much would you like to withdraw?\n");
@@ -35,7 +36,7 @@ class atm {
                                 cont = false;
                                 break;
                             }
-                            else if (input.equals("d")){
+                            else if (input.equals("d")){//makes deposit into checkings
                                 var object = accounts.get(j);
                                 System.out.print("Your accounts balance is " + ((checkings)object).getAmount() + "\n");
                                 System.out.print("How much would you like to deposit?\n");
@@ -50,7 +51,7 @@ class atm {
                         else if (accounts.get(j) instanceof savings){
                             System.out.println("Would you like to withdraw or make a deposit from your savings(w/d)?\n");
                             input = in.nextLine();
-                            if (input.equals("w")){
+                            if (input.equals("w")){//makes withdrawal from saving
                                 var object = accounts.get(j);
                                 System.out.print("Your accounts balance is " + ((savings)object).getAmount() + "\n");
                                 System.out.print("How much would you like to withdraw?\n");
@@ -60,7 +61,7 @@ class atm {
                                 cont = false;
                                 break;
                             }
-                            else if (input.equals("d")){
+                            else if (input.equals("d")){//makes deposit into savings
                                 var object = accounts.get(j);
                                 System.out.print("Your accounts balance is " + ((savings)object).getAmount() + "\n");
                                 System.out.print("How much would you like to deposit?\n");
@@ -73,7 +74,7 @@ class atm {
                             
                         }
                     }
-                    else {
+                    else {//if pin is incorrect, break loop
                         System.out.println("Incorrect PIN\n System Locked \n Goodbye");
                         cont = false;
                         break;
@@ -91,6 +92,7 @@ class atm {
                 }
                 else {
                     //creates an ATM account
+                    //asking for account details
                     System.out.print("What is your first name?\n");
                     String fname = in.nextLine();
                     System.out.print("What is your last name?\n");
@@ -102,7 +104,7 @@ class atm {
                     in.nextLine();
                     System.out.print("Would you like to set up a savings or checkings?(s/c)\n");
                     input = in.nextLine(); 
-                    if (input.equals("s")){
+                    if (input.equals("s")){//creates savings accounts
                         System.out.print("Would you like to make an initial deposit?(y/n)\n");
                         input = in.nextLine();
                         if (input.equals("y")){
@@ -119,7 +121,7 @@ class atm {
                         }
                         
                     }
-                    else if (input.equals("c")){
+                    else if (input.equals("c")){//creates checkings account
                         System.out.print("Would you like to make an initial deposit?(y/n)\n");
                         input  = in.nextLine();
                         if (input.equals("n")){
