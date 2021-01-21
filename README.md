@@ -7,11 +7,10 @@ Attempting to create a basic ATM program. Allows you to make deposits into eithe
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
-
-VS Code
-GIT
-JDK 15
-Until Package
+* VS Code
+* GIT
+* JDK 15
+* Until Package
 
 # Useful Websites
 * [W3 Schools](https://www.w3schools.com/java/default.asp)
