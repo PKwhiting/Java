@@ -1,10 +1,7 @@
 # Overview
+First attempt at working with Java. Trying to learn the basic syntax of Java with implementing classes, objects, inheritance, methods, variables and loops to further my programming skills. Have previous experience with C++ and it transfered over well to Java. 
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
-
-{Provide a description the software that you wrote to demonstrate the Java language.}
-
-{Describe your purpose for writing this software.}
+Attempting to create a basic ATM program. Allows you to make deposits into either a checkings or savings. Also allows you to make an account and set up a checkings or savings account with an initial deposit. Checkings and savings are subclasses of an account. Pointers for the classes are saved in an ArrayList. Basic methods allow for basic manipulations of the accounts.
 
 {Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
 
@@ -12,9 +9,10 @@
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+VS Code
+GIT
+JDK 15
+Until Package
 
 # Useful Websites
 
@@ -23,8 +21,6 @@
 * [TutorialsPoint](https://www.tutorialspoint.com/java/java_basic_syntax.htm)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Allow for a continuous while loop that allows users to take multiple actions.
+* Allow for a checking and savings account to be created simultaneously under the same pin.
+* GUI
